@@ -1,5 +1,5 @@
    Dado('a requisicao da API') do
-    #Requisição  API na classe BuscarCep
+    #Requisição da API na classe BuscarCep
     end
   
   Quando('realizo uma consulta com o {string}') do |cep|
@@ -7,6 +7,10 @@
     end
     
   Então('valido o código do {string} com sucesso') do |ibge|
+     @new_busca.exibir
+  end
+
+  Então('valido se o cep é invalido') do
      @new_busca.exibir
   end
 

@@ -14,17 +14,17 @@ Esquema do Cenário: Consultar CEP com sucesso
       |  "01001000" | "3550308" |
       |  "41336070" | "2927408" |
 
-@consulta_invalido
+@consulta_inv
 Esquema do Cenário: Consultar CEP invalido
 
     Dado a requisicao da API 
     Quando realizo uma consulta com o <cep>
-    Então valido o código se o cep é invalido
+    Então valido se o cep é invalido
     
     Exemplos: 
-      |  cep        |  
-      |  "01001009" | 
-      |  "41336079" | 
+      |  cep          |  
+      |  "01001009"   | 
+      |  "41336071"   | 
 
 
 

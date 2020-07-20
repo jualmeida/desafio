@@ -1,3 +1,3 @@
 Before do
-    @new_busca = BuscarCep.new
+    @new_busca = BuscarCep.new()
 end
